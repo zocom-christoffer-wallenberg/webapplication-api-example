@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=MedievalSharp&display=swap');
+
+body {
+    width: 100vw;;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #515969;
+}
+
+.title {
+    font-family: 'MedievalSharp', cursive;
+    color: #ffffff;
+}
+
+.primary-button {
+    background: #4dbecf;
+    border: none;
+    padding: 0.7rem;
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none;
+    margin-top: 1rem;
+}
+
+.primary-button.animated {
+    animation: 0.75s short-press cubic-bezier(0.77, 0, 0.175, 1) forwards;
+}
+
+@keyframes short-press {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
